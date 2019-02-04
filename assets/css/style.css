@@ -149,9 +149,11 @@ h3, h2 {
 }
 
 .work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
+  width: 300px;
+  height: 225px;
+  float: left;
+  margin: 0 20px 20px 0;
+  position: relative;
 }
 
 .work h3 {
@@ -216,151 +218,87 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media only screen and (max-width: 980px) {
-
-	body {
-		width: 85%;
-		height: 1000px;
-		margin: auto;
-	}
-
-	#about {
-		height: auto;
-	}
-
-	#about img {
-		width: 90%;
-		height: 100%;
-		margin: 15px 5% 20px 5%;
-		
-	}
-
-	#about p {
-		margin-left: 20px;
-		margin-right: 20px;
-
-	}
-
-	#connect img {
-	    margin: 5px 0px 0px 0px;
-	    height: 45px;
-	}
-
-	#portfolio {
-		height: 750px;
+@media screen and (max-width: 980px) {
+  #logo {
+      margin-left: 10%;
+  }
+  nav { 
+    margin-right: 10%;
+      
+  }
+  .main-section {
+      margin-left: 0%;
+      max-width: 100%;
+  }
+  .auth-image {
+      width: 100%;
+  }
+  .sidebar {
+      margin-bottom: 5%;
+      margin-right: 0%;
+      max-width: 100%;
+  }
+  .work {
+      width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    #logo {
+        margin-left: 5%;
     }
-
-    #portfolio li {
-		width: 90%;
-		height: 250px;
-		margin: 15px 5% 20px 5%;
-	}
-
-	#portfolio img {
-		width: 100%;
-		height: 100%;
-	}
-
-	.portLabel {
-
-	}
-}
-
-
-@media only screen and (max-width: 768px) {
-
-	[class*="col-"] {
+    nav { 
+      margin-bottom: 1%;
+      margin-right: 20%;
+      
+        
+    }
+    .main-section {
+        margin-left: 0%;
+        max-width: 100%;
+    }
+    .auth-image {
         width: 100%;
     }
-
-    body {
-    	height: 1150px;
+    .sidebar {
+        margin-bottom: 5%;
+        margin-right: 0%;
+        max-width: 100%;
     }
-
-    #nav {
-    	padding-right: 25px;
-    	position: absolute;
+    .work {
+        width: 75%;
     }
+  
 
-    #about {
-    	margin: 35px;
-    }
-
-    #about img {
-    	width: 45%;
-		margin: 15px 15px 0px 15px;
-    }
-
-    #portfolio {
-    	height: 700px;
-    	margin: 35px;
-    }
-
-    #portfolio li {
-		width: 45%;
-		height: 180px;
-		margin: 10px 0px 10px 3.2%;
-		float: left;
-	}
-
-    #connect {
-	    margin: 35px;
-	    padding: 20px 35px 20px 35px;
-	    text-align: left;
-	}
-
-	#connect img {
-		height: 51px;
-	}
-
-	#contact {
-		margin: 35px;
-	}
-}
-
-@media (max-width: 980px) {
-  #container {
-    width: 100%;
-  }
-  .main-section {
-    width: 70%;
-  }
-  .sidebar {
-    width: 30%;
-  }
-  .portfolio {
-    width: 100%;
+  @media screen and (max-width: 640px) {
+      header {
+          position: static;
+      }
+      #logo {
+          margin-left: 0%;
+          width: 100%;
+      }
+      #masthead {
+          margin: -2% -1.5% 0%;
+          width: 101%;
+      }
+      nav{
+          margin-bottom: 2%;
+          margin-right: 30%;
+       
+      }
+      .main-section {
+          margin-top: 4%;
+      }
+     .auth-image {
+          margin-bottom: 5%;
+          width: 100%;
+      }
+      .sidebar {
+          margin-bottom: 5%;
+          max-width: 100%;
+      }
+      .work {
+          width: 100%;
+      }
   }
 }
-@media (max-width: 768px) {
-    #container {
-    width: 100%;
-  }
-  .main-section {
-    width: 100%;
-  }
-  .sidebar {
-    width: 100%;
-  }
-  .portfolio {
-    width: 100%;
-  }
-}
-
-@media (max-width: 640px) {
-  #masthead {
-    position: static;
-  }
-  #container {
-   width: 100%;
-  }
-  .main-section {
-    width: 100%;
-  }
-  .sidebar {
-    width: 100%;
-  }
-  .portfolio {
-    width: 100%;
-  }
 }
